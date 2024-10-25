@@ -1,15 +1,13 @@
-@charset "utf-8";
 /* Estilos para la página de amigos */
-
 body {
     font-family: 'Times New Roman', serif;
-    background: linear-gradient(45deg, #a67b5b, #e0c1a0); /* Fondo degradado en tonos café */
+    background: linear-gradient(45deg, #a67b5b, #e0c1a0);
     color: #333;
-    padding: 20px;
+    margin: 0;
+    padding: 0 20px;
     text-align: center;
-    animation: fondoFade 5s infinite alternate; /* Animación en el fondo */
-    opacity: 0; /* Inicialmente invisible */
-    animation: fadeIn 1s ease-in-out forwards, fondoFade 5s infinite alternate; /* Animación de entrada y del fondo */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards, fondoFade 5s infinite alternate;
 }
 
 @keyframes fondoFade {
@@ -21,7 +19,6 @@ body {
     }
 }
 
-/* Animación de entrada */
 @keyframes fadeIn {
     to {
         opacity: 1;
@@ -30,18 +27,18 @@ body {
 
 .container {
     max-width: 1000px;
-    margin: 100px auto 20px; /* Ajuste para evitar que se encime con la barra de herramientas */
+    margin: 100px auto 20px;
     padding: 20px;
-    background-color: #f5e6d3; /* Fondo claro para el contenedor */
+    background-color: #f5e6d3;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
     font-size: 2.5em;
-    color: #6d4c41; /* Tono café oscuro para el título */
+    color: #6d4c41;
     margin-bottom: 30px;
-    animation: tituloZoom 1.5s ease-in-out infinite alternate; /* Animación de zoom */
+    animation: tituloZoom 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes tituloZoom {
@@ -60,12 +57,12 @@ body {
 }
 
 .amigos-item {
-    background-color: #eae1d0; /* Fondo claro para cada amigo */
+    background-color: #eae1d0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover en las imágenes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .amigos-item:hover {
@@ -78,11 +75,11 @@ body {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease; /* Efecto fade-in en las imágenes */
+    transition: opacity 0.3s ease;
 }
 
 .amigos-item img:hover {
-    opacity: 0.8; /* Efecto en hover de las imágenes */
+    opacity: 0.8;
 }
 
 .amigos-item h2 {
@@ -97,7 +94,6 @@ body {
     opacity: 0.9;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .amigos-grid {
         grid-template-columns: 1fr;
@@ -107,7 +103,7 @@ body {
 /* Estilo para la barra de herramientas */
 .barra-herramientas {
     background-color: #C2B67C;
-    padding: 30px 0;
+    padding: 20px 0;
     position: fixed;
     top: 0;
     width: 100%;
